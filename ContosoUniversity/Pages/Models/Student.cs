@@ -20,10 +20,9 @@ namespace ContosoUniversity.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         [Display(Name = "Enrollment Date")]
-        public int Age { get; set; }
-        [Required]
-        [Display(Name = "Age")]
         public DateTime EnrollmentDate { get; set; }
+        [Display(Name = "Age")]
+        public int Age { get; set; }
         [Display(Name = "Full Name")]
         public string FullName
         {
